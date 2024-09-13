@@ -16,3 +16,9 @@ foreach (file ${files})
     add_executable(${exe} ${file})
     #    message(\ \ \ \ --\ \[${exe}\]\ will\ be\ compiled\ to\ \'.runtime/${exe}.exe\') # DEBUG 编译信息
 endforeach ()
+
+add_executable(mcdd
+        mcdd/mcdd.c
+        mcdd/mcdd.h
+        mcdd/main.c)
+
